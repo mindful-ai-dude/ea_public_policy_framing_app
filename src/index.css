@@ -1,0 +1,33 @@
+@tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    body {
+      @apply bg-background text-gray-800;
+      font-family: "Inter Variable", system-ui, sans-serif;
+    }
+
+    .gradient-background {
+      @apply bg-gradient-to-br from-blue-400 to-blue-200;
+    }
+
+    .glass-card {
+      @apply bg-glass-bg border border-glass-border rounded-container shadow-soft backdrop-blur-xl;
+    }
+
+    .input-field {
+      @apply w-full px-4 py-3 rounded-button bg-white/50 border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow shadow-sm hover:shadow min-h-[44px];
+    }
+
+    .button {
+      @apply px-6 py-3 rounded-button bg-primary text-white font-semibold hover:bg-primary-hover transition-colors shadow-sm hover:shadow disabled:opacity-50 disabled:cursor-not-allowed min-h-[44px] flex items-center justify-center;
+    }
+
+    /* Auth styles to match the new design system */
+    .auth-input-field {
+      @apply w-full px-4 py-3 rounded-button bg-white/50 border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow shadow-sm hover:shadow min-h-[44px];
+    }
+
+    .auth-button {
+      @apply w-full px-6 py-3 rounded-button bg-primary text-white font-semibold hover:bg-primary-hover transition-colors shadow-sm hover:shadow disabled:opacity-50 disabled:cursor-not-allowed min-h-[44px] flex items-center justify-center;
+    }
